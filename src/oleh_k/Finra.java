@@ -1,4 +1,4 @@
-package Oleh;
+package oleh_k;
 
 public class Finra {
     public static void main(String[] args) {

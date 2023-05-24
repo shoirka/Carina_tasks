@@ -1,4 +1,4 @@
-package Oleh;
+package oleh_k;
 
 import java.text.DecimalFormat;
 

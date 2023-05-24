@@ -1,4 +1,4 @@
-package Oleh;
+package oleh_k;
 
 public class OddOrEven {
     public static String oddOrEven(double number) {
