@@ -1,6 +1,25 @@
 package week1;
 
 public class Finra {
+    public static void finra(int min, int max) {
+        for (int i=min; i<=max; i++) {
+            if (i % 3==0 && i % 5 == 0) {
+                System.out.println("FINRA");
+            }
+            else if (i % 3==0 ) {
+                System.out.println("FIN");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("RA");
+            }
+            else System.out.println(i);
+        }
+    }
+
+    public static void main(String[] args) {
+        finra(1,30);
+    }
+
 }
 /*
  FINRA:
