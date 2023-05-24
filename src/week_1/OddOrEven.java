@@ -1,4 +1,4 @@
-package week1;
+package week_1;
 
 public class OddOrEven {
     public static String oddOrEven(double number) {

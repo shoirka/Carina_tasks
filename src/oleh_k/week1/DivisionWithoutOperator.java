@@ -1,4 +1,4 @@
-package oleh_k;
+package oleh_k.week1;
 
 import java.text.DecimalFormat;
 
