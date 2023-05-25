@@ -14,14 +14,14 @@ package aaron;
  */
 public class NumbersDivisibleBy_3_5_15 {
     public static void main(String[] args) {
-        solution(17);
+        solution(100);
     }
 
     public static void solution(int n) {
         String divisibleBy15 = "";
         String divisibleBy5 = "";
         String divisibleBy3 = "";
-        int[] arr = new int[100];
+        int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++)
             arr[i] = i + 1;
 
