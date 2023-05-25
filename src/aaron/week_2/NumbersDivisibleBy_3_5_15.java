@@ -1,4 +1,4 @@
-package aaron;
+package aaron.week_2;
 
 /**
  * Numbers -- Divisible by 3, 5, 15
