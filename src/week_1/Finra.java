@@ -1,4 +1,4 @@
-package week1;
+package week_1;
 
 public class Finra {
     public static void finra(int min, int max) {
