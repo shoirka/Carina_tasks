@@ -12,8 +12,9 @@ public class VolunteersGenerator {
         List<String> absentToday = new ArrayList<>(
                 Arrays.asList()
         );
-        absentToday.removeIf(p->selectedPreviousWeeks.contains(p));
         System.out.println("absentToday_notReady = " + absentToday);
+        absentToday.removeIf(p->selectedPreviousWeeks.contains(p));
+
 
 
         String[] selectedToday = new String[3];
@@ -27,6 +28,9 @@ public class VolunteersGenerator {
             }
         }
         System.out.println();
-        System.out.println("\tselectedToday = " + Arrays.toString(selectedToday));
+        System.out.println("Selected Today:");
+        for (int i = 0; i < selectedToday.length; i++) {
+            System.out.println("\tTask "+(1+i)+" ---------------> "+selectedToday[i]);
+        }
     }
 }
