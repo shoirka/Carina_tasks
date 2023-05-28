@@ -1,3 +1,5 @@
+package VolunteersGenerator;
+
 import java.time.LocalDate;
 import java.util.*;
 
@@ -30,7 +32,7 @@ public class VolunteersGenerator {
         System.out.println();
         System.out.println("Selected Today:");
         for (int i = 0; i < selectedToday.length; i++) {
-            System.out.println("\tTask "+(1+i)+" ---------------> "+selectedToday[i]);
+            System.out.println("\t"+ClassScanner.getClassesFromPackage("week_2").get(i).replace("week_2.","")+" --> "+selectedToday[i]);
         }
     }
 }
