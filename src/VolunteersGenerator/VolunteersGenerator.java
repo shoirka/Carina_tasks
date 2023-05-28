@@ -37,7 +37,7 @@ public class VolunteersGenerator {
         System.out.println();
         System.out.println("Selected Today:");
         for (int i = 0; i < selectedToday.length; i++) {
-            System.out.println("\t"+ClassScanner.getClassesFromPackage("week_"+weekNumber).get(i).replace("week_2.","")+" --> "+selectedToday[i]);
+            System.out.println("\t"+ClassScanner.getClassesFromPackage("week_"+weekNumber).get(i).replace("week_"+weekNumber+".","")+" --> "+selectedToday[i]);
         }
     }
 }
