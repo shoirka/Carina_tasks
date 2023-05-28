@@ -12,6 +12,7 @@ public class VolunteersGenerator {
         List<String> absentToday = new ArrayList<>(
                 Arrays.asList()
         );
+        absentToday.removeIf(p->selectedPreviousWeeks.contains(p));
         System.out.println("absentToday_notReady = " + absentToday);
 
 
