@@ -8,14 +8,19 @@ public class VolunteersGenerator {
         String[] names = {
                 "Esma Ozyildirim", "Konstantin Pashkov", "Aliy Shegidevich", "Sucharita Chakraborty", "Marat Aksiev", "Mariya Kiritchenko", "Julia Linkola", "Ara Ghonyan", "Olena Sidlovych", "Ekaterina Bryzgalina", "Busra Turan", "Maryna Kamenna", "Shoira Barotova", "Oleh Kochetkov"};
 
+        // Add who was selected previous weeks
         List<String> selectedPreviousWeeks = new ArrayList<>(Arrays.asList("Sucharita Chakraborty", "Aliy Shegidevich", "Ekaterina Bryzgalina"));
         System.out.println("selectedPreviousWeeks = " + selectedPreviousWeeks);
 
+        // Add who is absent today
         List<String> absentToday = new ArrayList<>(
                 Arrays.asList()
         );
         System.out.println("absentToday_notReady = " + absentToday);
         absentToday.removeIf(p->selectedPreviousWeeks.contains(p));
+
+        // Add week task number
+        int weekNumber=2;
 
 
 
@@ -32,7 +37,7 @@ public class VolunteersGenerator {
         System.out.println();
         System.out.println("Selected Today:");
         for (int i = 0; i < selectedToday.length; i++) {
-            System.out.println("\t"+ClassScanner.getClassesFromPackage("week_2").get(i).replace("week_2.","")+" --> "+selectedToday[i]);
+            System.out.println("\t"+ClassScanner.getClassesFromPackage("week_"+weekNumber).get(i).replace("week_2.","")+" --> "+selectedToday[i]);
         }
     }
 }
