@@ -1,4 +1,4 @@
-package alik;
+package alik.week_1;
 
 public class Finra {
 
