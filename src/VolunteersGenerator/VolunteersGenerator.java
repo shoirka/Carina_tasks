@@ -15,11 +15,11 @@ public class VolunteersGenerator {
         System.out.println("selectedPreviousWeeks = " + selectedPreviousWeeks);
 
         // Add who is absent today
-        List<String> absentToday = new ArrayList<>(
+        List<String> absentToday_notReady = new ArrayList<>(
                 Arrays.asList()
         );
-        System.out.println("absentToday_notReady = " + absentToday);
-        absentToday.removeIf(p -> selectedPreviousWeeks.contains(p));
+        System.out.println("absentToday_notReady = " + absentToday_notReady);
+        absentToday_notReady.removeIf(p -> selectedPreviousWeeks.contains(p));
 
         // Add week task number
         int weekNumber = 2;
@@ -28,9 +28,9 @@ public class VolunteersGenerator {
         String[] selectedToday = new String[3];
         Random rand = new Random();
         int start = 0;
-        while (start < selectedToday.length && selectedToday[start] == null && (selectedPreviousWeeks.size() + absentToday.size()) < students.length) {
+        while (start < selectedToday.length && selectedToday[start] == null && (selectedPreviousWeeks.size() + absentToday_notReady.size()) < students.length) {
             int pick = rand.nextInt(students.length);
-            if (!selectedPreviousWeeks.contains(students[pick]) && !absentToday.contains(students[pick])) {
+            if (!selectedPreviousWeeks.contains(students[pick]) && !absentToday_notReady.contains(students[pick])) {
                 selectedToday[start++] = students[pick];
                 selectedPreviousWeeks.add(students[pick]);
             }
