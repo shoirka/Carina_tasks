@@ -1,4 +1,4 @@
-package oleh_k.week2;
+package oleh_k.week_2;
 
 /**
  * Numbers -- Swap Numbers
