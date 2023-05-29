@@ -9,7 +9,7 @@ public class VolunteersGenerator {
                 "Esma Ozyildirim", "Konstantin Pashkov", "Aliy Shegidevich", "Sucharita Chakraborty", "Marat Aksiev", "Mariya Kiritchenko", "Julia Linkola", "Ara Ghonyan", "Olena Sidlovych", "Ekaterina Bryzgalina", "Busra Turan", "Maryna Kamenna", "Shoira Barotova", "Oleh Kochetkov"};
 
         // Add who was selected previous weeks
-        List<String> selectedPreviousWeeks = new ArrayList<>(Arrays.asList("Sucharita Chakraborty", "Aliy Shegidevich", "Ekaterina Bryzgalina"));
+        List<String> selectedPreviousWeeks = new ArrayList<>(Arrays.asList( "Ekaterina Bryzgalina","Aliy Shegidevich","Sucharita Chakraborty"));
         System.out.println("selectedPreviousWeeks = " + selectedPreviousWeeks);
 
         // Add who is absent today
@@ -38,7 +38,11 @@ public class VolunteersGenerator {
         System.out.println("Selected Today:");
         try {
             for (int i = 0; i < selectedToday.length; i++) {
-                System.out.println("\t"+ClassScanner.getClassesFromPackage("week_"+weekNumber).get(i).replace("week_"+weekNumber+".","")+" --> "+selectedToday[i]);
+                if (selectedToday[i]==null){
+                    System.err.println("All other people was selected at least one time we need to update our data!");
+                    System.exit(1);
+                }
+                System.out.println("\t"+ClassScanner.getClassesFromPackage("week_"+weekNumber).get(i)+" --> "+selectedToday[i]);
             }
         }catch (IndexOutOfBoundsException e){
             System.err.println("Week name do not exist!");
