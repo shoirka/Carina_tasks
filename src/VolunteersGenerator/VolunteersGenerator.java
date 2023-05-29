@@ -5,7 +5,7 @@ import java.util.*;
 
 public class VolunteersGenerator {
     public static void main(String[] args) {
-        String[] names = {
+        String[] students = {
                 "Esma Ozyildirim", "Konstantin Pashkov", "Aliy Shegidevich", "Sucharita Chakraborty", "Marat Aksiev", "Mariya Kiritchenko", "Julia Linkola", "Ara Ghonyan", "Olena Sidlovych", "Ekaterina Bryzgalina", "Busra Turan", "Maryna Kamenna", "Shoira Barotova", "Oleh Kochetkov"};
 
         // Add who was selected previous weeks
@@ -28,11 +28,11 @@ public class VolunteersGenerator {
         String[] selectedToday = new String[3];
         Random rand = new Random();
         int start = 0;
-        while (start < selectedToday.length && selectedToday[start] == null && (selectedPreviousWeeks.size() + absentToday.size()) < names.length) {
-            int pick = rand.nextInt(names.length);
-            if (!selectedPreviousWeeks.contains(names[pick]) && !absentToday.contains(names[pick])) {
-                selectedToday[start++] = names[pick];
-                selectedPreviousWeeks.add(names[pick]);
+        while (start < selectedToday.length && selectedToday[start] == null && (selectedPreviousWeeks.size() + absentToday.size()) < students.length) {
+            int pick = rand.nextInt(students.length);
+            if (!selectedPreviousWeeks.contains(students[pick]) && !absentToday.contains(students[pick])) {
+                selectedToday[start++] = students[pick];
+                selectedPreviousWeeks.add(students[pick]);
             }
         }
         System.out.println();
