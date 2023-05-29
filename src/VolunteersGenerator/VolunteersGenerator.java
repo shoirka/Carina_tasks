@@ -9,7 +9,9 @@ public class VolunteersGenerator {
                 "Esma Ozyildirim", "Konstantin Pashkov", "Aliy Shegidevich", "Sucharita Chakraborty", "Marat Aksiev", "Mariya Kiritchenko", "Julia Linkola", "Ara Ghonyan", "Olena Sidlovych", "Ekaterina Bryzgalina", "Busra Turan", "Maryna Kamenna", "Shoira Barotova", "Oleh Kochetkov"};
 
         // Add who was selected previous weeks
-        List<String> selectedPreviousWeeks = new ArrayList<>(Arrays.asList( "Ekaterina Bryzgalina","Aliy Shegidevich","Sucharita Chakraborty"));
+        List<String> selectedPreviousWeeks = new ArrayList<>(Arrays.asList(
+                "Ekaterina Bryzgalina","Aliy Shegidevich","Sucharita Chakraborty"
+                ));
         System.out.println("selectedPreviousWeeks = " + selectedPreviousWeeks);
 
         // Add who is absent today
