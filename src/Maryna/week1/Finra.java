@@ -1,4 +1,4 @@
-package Maryna;
+package Maryna.week1;
 
 public class Finra {
     public static void main(String[] args) {
