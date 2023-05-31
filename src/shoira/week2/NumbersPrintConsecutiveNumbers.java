@@ -1,4 +1,5 @@
 package shoira.week2;
+//Hello , Ola, Privet, Merhaba, Selam.
 
 /**
  *  Numbers -- print consecutive numbers
