@@ -1,4 +1,4 @@
-package sucharita;
+package sucharita.week1;
 
 public class OddOrEven {
     public static void OddOrEven(int num){

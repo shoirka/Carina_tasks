@@ -1,4 +1,4 @@
-package sucharita;
+package sucharita.week1;
 
 public class Finra {
     public static void main(String[] args) {
