@@ -7,17 +7,37 @@ package shoira.week2;
 public class NumbersSwap {
 
         public static void main(String[] args) {
-            int a = 10;
-            int b = 20;
+            int a = 5;
+            int b = 10;
 
-            a = a + b; //10+20=30
-            b = a - b; // 20-10=10b
-            a = a - b; //30-10=20a
+            System.out.println("Before swapping:");
+            System.out.println("a = " + a);
+            System.out.println("b = " + b);
 
+            swapNumbers(a, b);
 
+            System.out.println("After swapping:");
+            System.out.println("a = " + a);
+            System.out.println("b = " + b);
+        }
+
+        public static void swapNumbers(int a, int b) {
+            a = a + b;
+            b = a - b;
+            a = a - b;
+
+            System.out.println("Swapped values inside the method:");
             System.out.println("a = " + a);
             System.out.println("b = " + b);
         }
     }
+
+
+
+
+
+
+
+
 
 
