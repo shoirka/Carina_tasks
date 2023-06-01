@@ -17,7 +17,7 @@ public class Numbers_Reverse_Negative_Number {
     }
 
     public static void main(String[] args) {
-        int number = -35;
+        int number = -35566;
         System.out.println("Before: " + number);
         System.out.println("After: " + reverseNumber(number));
     }
