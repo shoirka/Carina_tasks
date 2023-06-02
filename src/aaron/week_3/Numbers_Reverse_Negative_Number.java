@@ -1,5 +1,6 @@
 package aaron.week_3;
-
+//Write a return method that can reverse digits of a negative number and return it as int
+//input: -35  output: -53
 public class Numbers_Reverse_Negative_Number {
     public static void main(String[] args) {
         System.out.println(reverse(-35));
