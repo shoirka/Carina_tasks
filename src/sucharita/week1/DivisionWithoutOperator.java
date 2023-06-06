@@ -1,4 +1,4 @@
-package sucharita;
+package sucharita.week1;
 
 import java.util.Scanner;
 
