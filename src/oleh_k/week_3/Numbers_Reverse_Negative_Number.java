@@ -1,5 +1,9 @@
 package oleh_k.week_3;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 public class Numbers_Reverse_Negative_Number {
     // 349.0
     public static int reverseNumber(int number) {
@@ -17,8 +21,21 @@ public class Numbers_Reverse_Negative_Number {
     }
 
     public static void main(String[] args) {
-        int number = -35566;
-        System.out.println("Before: " + number);
-        System.out.println("After: " + reverseNumber(number));
+        List<Integer> numbers=new ArrayList<>();
+        Random num=new Random();
+        for (int i = 0; i < 50; i++) {
+            int temp=num.nextInt(1000);
+            if (i%2==0){
+                numbers.add(temp*-1);
+            }else {
+                numbers.add(temp);
+            }
+        }
+        for (Integer each : numbers) {
+            System.out.println("Before "+each);
+            System.out.println("After "+reverseNumber(each));
+            System.out.println();
+        }
+        
     }
 }
