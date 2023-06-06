@@ -32,8 +32,8 @@ public class Numbers_Reverse_Negative_Number {
             }
         }
         for (Integer each : numbers) {
-            System.out.println("Before: "+each);
-            System.out.println("After: "+reverseNumber(each));
+            System.out.println("Before:\t"+each);
+            System.out.println("After:\t"+reverseNumber(each));
             System.out.println();
         }
         
