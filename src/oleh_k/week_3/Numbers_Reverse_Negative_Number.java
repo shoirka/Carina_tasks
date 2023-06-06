@@ -14,7 +14,7 @@ public class Numbers_Reverse_Negative_Number {
             str = str.replace("-", "");
             sign = -1;
         }
-        for (int i = str.length() - 1; i >= 0; i--) {
+        for (int i = str.length() - 1; i >= 0; i--) { // we can also use string builder reverse method
             result.append(str.charAt(i));
         }
         return Integer.parseInt(result + "") * sign;
