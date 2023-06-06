@@ -1,4 +1,4 @@
-package marat;
+package marat.week1;
 
 public class DivisionWithoutOperator {
 
