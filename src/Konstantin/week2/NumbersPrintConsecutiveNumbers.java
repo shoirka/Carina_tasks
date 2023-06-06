@@ -1,7 +1,4 @@
-package week_2;
-
-import java.util.ArrayList;
-import java.util.List;
+package Konstantin.week2;
 
 /**
  *  Numbers -- print consecutive numbers
@@ -26,30 +23,31 @@ import java.util.List;
  * Codility
  */
 public class NumbersPrintConsecutiveNumbers {
-    public static List<String> numbers(int start, int end) {
-        List<String> result = new ArrayList<>();
-        for (int i = start; i < end; i++) {
-            if (i % 2 == 0 && i % 5 == 0) {
-                result.add("CodilityCoders");
-            } else if (i % 3 == 0 && i % 5 == 0) {
-                result.add("TestCoders");
-            } else if (i % 2 == 0 && i % 3 == 0) {
-                result.add("CodilityTest");
-            } else if (i % 2 == 0) {
-                result.add("Codility");
-            } else if (i % 3 == 0) {
-                result.add("Test");
-            } else if (i % 5 == 0) {
-                result.add("Coders");
+
+    public static void printNumbers(int N) {
+        for (int i = 1; i <= N; i++) {
+            String output = "";
+
+            if (i % 2 == 0) {
+                output += "Codility";
+            }
+            if (i % 3 == 0) {
+                output += "Test";
+            }
+            if (i % 5 == 0) {
+                output += "Coders";
+            }
+
+            if (output.isEmpty()) {
+                System.out.println(i);
             } else {
-                result.add(i + "");
+                System.out.println(output);
             }
         }
-        return result;
     }
 
     public static void main(String[] args) {
-        List<String> numbers = numbers(1, 100);
-        System.out.println(numbers);
+        int N = 17;
+        printNumbers(N);
     }
 }

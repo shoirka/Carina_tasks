@@ -1,7 +1,6 @@
-package week_2;
+package Maryna.week2;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 /**
  *  Numbers -- print consecutive numbers
@@ -26,30 +25,23 @@ import java.util.List;
  * Codility
  */
 public class NumbersPrintConsecutiveNumbers {
-    public static List<String> numbers(int start, int end) {
-        List<String> result = new ArrayList<>();
-        for (int i = start; i < end; i++) {
-            if (i % 2 == 0 && i % 5 == 0) {
-                result.add("CodilityCoders");
-            } else if (i % 3 == 0 && i % 5 == 0) {
-                result.add("TestCoders");
-            } else if (i % 2 == 0 && i % 3 == 0) {
-                result.add("CodilityTest");
-            } else if (i % 2 == 0) {
-                result.add("Codility");
-            } else if (i % 3 == 0) {
-                result.add("Test");
-            } else if (i % 5 == 0) {
-                result.add("Coders");
-            } else {
-                result.add(i + "");
-            }
-        }
-        return result;
-    }
 
     public static void main(String[] args) {
-        List<String> numbers = numbers(1, 100);
-        System.out.println(numbers);
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter number");
+        int num = s.nextInt();
+
+        for (int i = 1; i <= num; i++) {
+            boolean isSubstituted=false;
+            if (i % 2 == 0) {System.out.print("Codility"); isSubstituted=true;}
+            if (i % 3 == 0) {System.out.print("Test");isSubstituted=true;}
+            if (i % 5 == 0) {System.out.print("Coders");isSubstituted=true;}
+            if (isSubstituted) System.out.println();
+            else System.out.println(i);
+        }
+
+
     }
 }
+
+

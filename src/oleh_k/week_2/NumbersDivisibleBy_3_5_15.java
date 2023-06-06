@@ -1,9 +1,6 @@
-package week_2;
+package oleh_k.week_2;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  *  Numbers -- Divisible by 3, 5, 15
@@ -18,6 +15,7 @@ import java.util.Map;
  * Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84 87 93 96 99
  */
 public class NumbersDivisibleBy_3_5_15 {
+
     public static Map<String, List<Integer>> divisible_3_5_15(int start, int end){
         Map<String, List<Integer>> result=new LinkedHashMap<>();
         result.put("Divisible By 15",new ArrayList<>());
