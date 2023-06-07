@@ -1,4 +1,4 @@
-package shoira;
+package shoira.week1;
 
 import java.util.Scanner;
 
