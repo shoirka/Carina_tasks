@@ -8,7 +8,7 @@ Write a method that can check if a number is prime or not
 
     // prime number is the number that has two factors: 1 and itself
     // example: 2, 3, 5, 7, 9, 11
-    // 2 * 1 = 2; 5 * 1 = 5; etc.
+    // 2 is divisible by 1 and itself; 3 is divisible by 1 and itself, etc.
 
     // I will create a method that will return boolean as result
     // int parameter
