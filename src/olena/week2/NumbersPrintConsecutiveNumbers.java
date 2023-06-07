@@ -1,9 +1,6 @@
-package week_2;
+package olena.week2;
 
-import java.util.ArrayList;
-import java.util.List;
-
-/**
+/*
  *  Numbers -- print consecutive numbers
  * Write a function that, given a positive integer N, prints the consecutive numbers from 1 to N, each on a separate line. However, any number divisible by 2, 3 or 5 should be replaced by the word Codility, Test or Coders respectively. If a number is divisible by more than one of the numbers: 2,3 or 5, it should be replaced by a concatenation of the respective words Codility, Test and Coders in this given order. For example, numbers divisible by both 2 and 3 should be replaced by CodilityTest and numbers divisible by all three numbers: 2,3 and 5, should be replaced by CodilityTestCoders.
  *
@@ -25,31 +22,34 @@ import java.util.List;
  * TestCoders
  * Codility
  */
+
 public class NumbersPrintConsecutiveNumbers {
-    public static List<String> numbers(int start, int end) {
-        List<String> result = new ArrayList<>();
-        for (int i = start; i < end; i++) {
-            if (i % 2 == 0 && i % 5 == 0) {
-                result.add("CodilityCoders");
-            } else if (i % 3 == 0 && i % 5 == 0) {
-                result.add("TestCoders");
+    public static void main(String[] args) {
+
+        int N = 17;
+        String two = "Codility";
+        String three = "Test";
+        String five = "Coders";
+
+        for (int i = 1; i < N; i++) {
+            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+                System.out.println(two + three + five);
             } else if (i % 2 == 0 && i % 3 == 0) {
-                result.add("CodilityTest");
+                System.out.println(two + three);
+            } else if (i % 2 == 0 && i % 5 == 0) {
+                System.out.println(two + five);
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println(three + five);
             } else if (i % 2 == 0) {
-                result.add("Codility");
+                System.out.println(two);
             } else if (i % 3 == 0) {
-                result.add("Test");
+                System.out.println(three);
             } else if (i % 5 == 0) {
-                result.add("Coders");
+                System.out.println(five);
             } else {
-                result.add(i + "");
+                System.out.println(i);
             }
         }
-        return result;
     }
 
-    public static void main(String[] args) {
-        List<String> numbers = numbers(1, 100);
-        System.out.println(numbers);
-    }
 }
