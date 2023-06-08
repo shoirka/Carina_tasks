@@ -10,7 +10,8 @@ public class VolunteersGenerator {
 
         // Add who was selected previous weeks
         List<String> selectedPreviousWeeks = new ArrayList<>(Arrays.asList(
-                "Ekaterina Bryzgalina", "Aliy Shegidevich", "Sucharita Chakraborty","Maryna Kamenna","Marat Aksiev", "Shoira Barotova"
+                "Ekaterina Bryzgalina", "Aliy Shegidevich", "Sucharita Chakraborty","Maryna Kamenna","Marat Aksiev", "Shoira Barotova", "Oleh Kochetkov",
+                "Julia Linkola"
         ));
         System.out.println("selectedPreviousWeeks = " + selectedPreviousWeeks);
 
