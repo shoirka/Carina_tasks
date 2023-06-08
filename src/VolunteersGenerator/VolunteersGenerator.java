@@ -11,7 +11,7 @@ public class VolunteersGenerator {
         // Add who was selected previous weeks
         List<String> selectedPreviousWeeks = new ArrayList<>(Arrays.asList(
                 "Ekaterina Bryzgalina", "Aliy Shegidevich", "Sucharita Chakraborty","Maryna Kamenna","Marat Aksiev", "Shoira Barotova", "Oleh Kochetkov",
-                "Julia Linkola"
+                "Julia Linkola","Konstantin Pashkov", "Busra Turan","Ara Ghonyan"
         ));
         System.out.println("selectedPreviousWeeks = " + selectedPreviousWeeks);
 
@@ -23,10 +23,10 @@ public class VolunteersGenerator {
         absentToday_notReady.removeIf(p -> selectedPreviousWeeks.contains(p));
 
         // Add week task number
-        int weekNumber = 3;
+        int weekNumber = 4;
 
 
-        String[] selectedToday = new String[2];
+        String[] selectedToday = new String[3];
         Random rand = new Random();
         int start = 0;
         while (start < selectedToday.length && selectedToday[start] == null && (selectedPreviousWeeks.size() + absentToday_notReady.size()) < students.length) {
