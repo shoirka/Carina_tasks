@@ -1,4 +1,4 @@
-package olena;
+package olena.week1;
 
 public class DivideWithoutOperator {
     public static void main(String[] args) {
