@@ -1,4 +1,4 @@
-package marat.week3;
+package marat.week03;
 
 public class Numbers_Reverse_Negative_Number {
     public static int reverseNegative(int num) {

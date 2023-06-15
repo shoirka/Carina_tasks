@@ -1,4 +1,4 @@
-package marat.week3;
+package marat.week03;
 
 /**
  * Numbers -- PrimeNumber
