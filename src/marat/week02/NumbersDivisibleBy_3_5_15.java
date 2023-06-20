@@ -1,4 +1,4 @@
-package marat.week2;
+package marat.week02;
 
 public class NumbersDivisibleBy_3_5_15 {
 
