@@ -1,6 +1,6 @@
 package julia.week2;
 
-import marat.week2.NumbersPrintConsecutiveNumbers;
+
 
 public class ConsecutiveNumbers {
     public static void printConsecutiveNumbers(int num) {
@@ -24,7 +24,7 @@ public class ConsecutiveNumbers {
 
     public static void main(String[] args) {
 
-        NumbersPrintConsecutiveNumbers.printConsecutiveNumbers(23);
+
 
     }
 
