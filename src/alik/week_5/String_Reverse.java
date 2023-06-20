@@ -1,5 +1,7 @@
 package alik.week_5;
 
+import java.util.Arrays;
+
 /**
  *   String_Reverse
  * Write a return method that can reverse  String
@@ -8,7 +10,7 @@ package alik.week_5;
 public class String_Reverse {
 
     public static String reverse(String str) {
-        var result = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         for (int i=str.length()-1; i>=0; i--) {
             result.append(str.charAt(i));
         }
