@@ -1,8 +1,7 @@
-package julia.week2;
+package marat.week02;
 
+public class NumbersPrintConsecutiveNumbers {
 
-
-public class ConsecutiveNumbers {
     public static void printConsecutiveNumbers(int num) {
 
         for (int i = 1; i <= num; i++) {
@@ -14,7 +13,7 @@ public class ConsecutiveNumbers {
                     System.out.print("Test");
                 }
                 if (i % 5 == 0)
-                    System.out.println();
+                System.out.println();
             } else {
                 System.out.println(i);
             }
@@ -24,7 +23,7 @@ public class ConsecutiveNumbers {
 
     public static void main(String[] args) {
 
-
+        NumbersPrintConsecutiveNumbers.printConsecutiveNumbers(100);
 
     }
 
@@ -58,8 +57,3 @@ TestCoders
 Codility
 17
  */
-
-
-
-
-
