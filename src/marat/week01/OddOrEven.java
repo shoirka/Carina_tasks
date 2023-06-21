@@ -1,4 +1,4 @@
-package marat.week1;
+package marat.week01;
 
 public class OddOrEven {
 
