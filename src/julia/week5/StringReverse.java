@@ -12,10 +12,16 @@ public class StringReverse {
 
     }
 
+    public  static String  Reverse(String str) {
+
+        return new StringBuffer(str).reverse().toString();
+    }
+
+
     public static void main(String[] args) {
 
         // System.out.println("reverse(\"java\") = " + reverse("java"));
-        // System.out.println("reverse(\"palindrome\") = " + reverse("palindrome"));
+        System.out.println("Reverse(\"palindrome\") = " + Reverse("palindrome"));
         System.out.println("reverse(\"massachusetts\") = " + reverse("massachusetts"));
 
     }
