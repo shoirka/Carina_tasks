@@ -10,7 +10,7 @@ arr = Sort(arr); ==> {90, 20, 10, 8, 7};
  */
 public class Array_SortDescending {
     public static void sortDescendingOrder(int[] arr) {
-        if (arr.length==0||arr==null){
+        if (arr.length == 0 || arr == null) {
             throw new IllegalArgumentException();
         }
         for (int i = 0; i < arr.length; i++) {
@@ -21,11 +21,14 @@ public class Array_SortDescending {
                     arr[i3] = temp;
                 }
             }
+
         }
     }
 
     public static void main(String[] args) {
-        int[] arr = {10, 9, 8, 7, -1, 100,4,100,-1,300,55,-500};
+        int[] arr = {10, 9, 8, 7, -1, 100, 4, 100, -1, 300, 55, 5};
+        System.out.println(Arrays.toString(arr));
+        System.out.println("---------------");
         sortDescendingOrder(arr);
         System.out.println(Arrays.toString(arr));
     }
