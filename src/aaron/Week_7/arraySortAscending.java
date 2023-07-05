@@ -11,21 +11,23 @@ arr = Sort(arr); ==>{ 7, 8, 9, 10};*/
         System.out.println(Arrays.toString(Sort(new int[] {150,5,8,9,15})));
        SortingArrayAsc( new int[] {200,15,8,9,15});
     }
-    public static int[] Sort(int[] a) {
+    public static int[] Sort(int[] arr) {
         ArrayList<Integer> list=new ArrayList<Integer>();
-        for(int each: a)
+        for(int each: arr) {
             list.add(each);
-        for(int i=0; i < a.length; i++) {
-            a[i] = findMin(list);
-            list.remove(Integer.valueOf(a[i]));
         }
-        return a;
+        for(int i=0; i < arr.length; i++) {
+            arr[i] = findMin(list);
+            list.remove(Integer.valueOf(arr[i]));
+        }
+        return arr;
     }
 
-    public static int findMin(ArrayList<Integer> a) {
+    public static int findMin(ArrayList<Integer> arrL) {
         int min =Integer.MAX_VALUE;
-        for(int each: a)
+        for(int each: arrL) {
             min = Math.min(min, each);
+        }
         return min;
     }
 
