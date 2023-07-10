@@ -13,7 +13,7 @@ import java.util.Set;
  * For N = 3 one of the possible answers is [-1,0,1]  (but there are many more correct answers).
  */
 public class Array_NuniqueIntegersThatSumUpTo0 {
-    public static int[] nUniqueIntegersThatSumUpTo0(int n) {
+    public static int[] nUniqueIntegersThatSumUpTo0(int n, int numbersRange) {
         if (n <= 1 || n >= 100) {
             throw new IllegalArgumentException("1 < N < 100");
         }
@@ -23,10 +23,10 @@ public class Array_NuniqueIntegersThatSumUpTo0 {
         while (set.size() < n-1) {
             if (sign % 2 == 0) {
                 sign++;
-                set.add(-random.nextInt(100));
+                set.add(-random.nextInt(numbersRange));
                 continue;
             }
-            set.add(random.nextInt(100));
+            set.add(random.nextInt(numbersRange));
         }
         int sum = set.stream().mapToInt(Integer::intValue).sum();
         set.add(-sum);
@@ -39,9 +39,9 @@ public class Array_NuniqueIntegersThatSumUpTo0 {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(3)));
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(6)));
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(10)));
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(2)));
+        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(3,100)));
+        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(6,100)));
+        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(10,100)));
+        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(2,100)));
     }
 }
