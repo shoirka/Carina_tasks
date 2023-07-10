@@ -14,13 +14,13 @@ import java.util.Set;
  */
 public class Array_NuniqueIntegersThatSumUpTo0 {
     public static int[] nUniqueIntegersThatSumUpTo0(int n) {
-        if (n < 1 || n >= 100) {
+        if (n <= 1 || n >= 100) {
             throw new IllegalArgumentException("1 < N < 100");
         }
         Set<Integer> set = new HashSet<>();
         Random random = new Random();
         int sign = 0;
-        while (set.size() < n) {
+        while (set.size() < n-1) {
             if (sign % 2 == 0) {
                 sign++;
                 set.add(-random.nextInt(100));
