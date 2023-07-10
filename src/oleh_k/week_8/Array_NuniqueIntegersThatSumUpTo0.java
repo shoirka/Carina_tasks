@@ -39,9 +39,9 @@ public class Array_NuniqueIntegersThatSumUpTo0 {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(3,100)));
+        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(5,100)));
         System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(6,100)));
         System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(10,100)));
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(2,100)));
+        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(60,100)));
     }
 }
