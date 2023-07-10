@@ -28,20 +28,27 @@ public class Array_NuniqueIntegersThatSumUpTo0 {
             }
             set.add(random.nextInt(numbersRange));
         }
-        int sum = set.stream().mapToInt(Integer::intValue).sum();
-        set.add(-sum);
-        int[] result = new int[set.size()];
+        int[] result = new int[set.size()+1];
         int index = 0;
+        int sum = set.stream().mapToInt(Integer::intValue).sum();
         for (Integer each : set) {
             result[index++] = each;
         }
+        result[index]=  -set.stream().mapToInt(Integer::intValue).sum();
         return result;
+    }
+    public static int[]  nUniqueIntegersThatSumUpTo0_2(int n){
+        int[] res = new int[n];
+        for (int i = 0; i < res.length-1; i++) {
+            res[i++]=i;
+            res[i]=-i;
+        }
+        return  res;
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(5,100)));
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(6,100)));
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(10,100)));
-        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(8,100)));
+        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0(5,5)));
+        System.out.println(Arrays.toString(nUniqueIntegersThatSumUpTo0_2(5)));
+
     }
 }
